@@ -1,0 +1,170 @@
+body{
+    box-sizing: border-box;
+    background-color: white;
+    padding:50px;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+
+}
+section{
+    display: none;
+    background-color:hsl(36, 100%, 90%);
+    color:hsl(240, 100%, 5%);
+    width:50%;
+    height:170%;
+    position:absolute;
+    right:0px;
+    padding:30px;
+}
+#close{
+    position: relative;
+    left:210px;
+    top:-20px;
+}
+#menu{
+    display: none;
+}
+.w{
+    flex-grow: 4;
+    margin-left: 0px;
+}
+.menu{
+    flex-grow: 1;
+    margin-bottom: 0px;
+    margin-top: 30px;
+
+}
+p{
+    font-size: 15px;
+    color:hsl(233, 8%, 60%)
+}
+#cubes{
+    width:100%;
+}
+.upper{
+    width:100%;
+    display: flex;
+}
+.box2{
+    margin-left:20px;
+    color:white;
+    background-color: hsl(240, 100%, 5%);
+    padding:10px 40px 0px 40px;
+    height:auto;
+    width:35%;
+
+}
+.box1{
+    width:60%;
+}
+.text{
+    display: flex;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    text-align: left;
+}
+button{
+    width:40%;
+    height:30px;
+    color:white;
+    background-color: hsl(5, 85%, 63%);
+    border:none;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#new{
+    color:hsl(35, 77%, 62%);
+}
+.lower{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.one{
+    display: flex;
+}
+.two{
+    display: flex;
+}
+.three{
+    display: flex;
+}
+.rest{
+    display: flex;
+    flex-direction: column;
+    
+}
+.res{
+    display: flex;
+    flex-direction: column;
+}
+.re{
+    display: flex;
+    flex-direction: column;
+}
+.small{
+    width:180px;
+    height:auto;
+    
+}
+.x{
+    margin:10px 10px 10px 10px;
+}
+@media only screen and (max-width:650px){
+    .upper{
+        flex-direction: column;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width:550px){
+    .upper{
+        flex-direction: column;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .lower{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:450px){
+    .upper{
+        flex-direction: column;
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .lower{
+        flex-direction: column;
+    }
+    #menu{
+        display: block;
+        position: relative;
+        top:30px;
+    }
+    .menu{
+        display: none;
+    }
+}
